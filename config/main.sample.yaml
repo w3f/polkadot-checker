@@ -1,0 +1,5 @@
+endpoint: "wss://kusama-rpc.polkadot.io/"
+check:
+  blocks:
+    start: 0
+    end: 10

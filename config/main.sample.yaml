@@ -1,6 +1,6 @@
 endpoint: "wss://kusama-rpc.polkadot.io/"
 check:
-  blocks:
+  authoredBlocks:
     start: 452074
     end: 452655
     author: EafgFRX24PTgJAjGoaDuQLXQiLX4daSFQQttzGVticSD18o

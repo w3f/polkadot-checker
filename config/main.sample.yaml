@@ -1,5 +1,13 @@
 endpoint: "wss://kusama-rpc.polkadot.io/"
 check:
   blocks:
-    start: 0
-    end: 10
+    start: 452074
+    end: 452655
+    author: EafgFRX24PTgJAjGoaDuQLXQiLX4daSFQQttzGVticSD18o
+  events:
+    start: 434201
+    end: 434203
+    section: imOnline
+    method: HeartbeatReceived
+    match:
+      data: ["D7pwUyh2UzLCBb8nNnKm4kSdMi9C7QZmGPBDUDJzYKUDyvT"]

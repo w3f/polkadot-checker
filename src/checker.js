@@ -62,12 +62,10 @@ class Checker {
 
       events.forEach((record) => {
         const { event, phase } = record
-        console.log(`typeof event.data[0] ${JSON.stringify(typeof event.data[0])}`)
-        console.log(`typeof cfg.match.data[0] ${JSON.stringify(typeof cfg.match.data[0])}`)
-        console.log(`_.isEqual(event.data[0], cfg.match.data[0]): ${JSON.stringify(_.isEqual(event.data[0], cfg.match.data[0]))}`)
+        const eventData = JSON.parse(JSON.stringify(event.data))
         if (event.section.replace(/['"]+/g, '') === cfg.section &&
             event.method.replace(/['"]+/g, '') === cfg.method &&
-            _.isEqual(event.data, cfg.match.data)) {
+            _.isEqual(eventData, cfg.match.data)) {
           console.log(`event ${JSON.stringify(event)}`)
           outputEvents.push(event)
         }

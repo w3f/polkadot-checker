@@ -17,7 +17,7 @@ $ yarn start
 ```
 
 ## Configuration
-You have an example configuration in `config/main.sample.yaml`. The main fields
+You have an example configuration in [config/main.sample.yaml](https://github.com/w3f/polkadot-checker/blob/master/config/main.sample.yaml). The main fields
 in the configuration file are:
 
 * `endpoint`: polkadot websockets endpoint to connect to.

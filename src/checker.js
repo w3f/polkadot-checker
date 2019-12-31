@@ -49,7 +49,7 @@ class Checker {
         console.log(`block ${blockNumber}, was authored by ${author}`)
       }
     }
-    console.log(`Found ${outputBlocks.length} blocks authored by ${author} between ${cfg.start} and ${cfg.end}`)
+    console.log(`Found ${outputBlocks.length} blocks authored by ${cfg.author} between ${cfg.start} and ${cfg.end}`)
   }
 
   async _checkEvents(cfg) {
